@@ -1,0 +1,22 @@
+{
+  "name": "yatuka-cms",
+  "version": "1.0.0",
+  "description": "content management system",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghasemizade/yatuka-cms.git"
+  },
+  "author": "hosein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghasemizade/yatuka-cms/issues"
+  },
+  "homepage": "https://github.com/ghasemizade/yatuka-cms#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
