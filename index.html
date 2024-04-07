@@ -34,8 +34,8 @@
                     </span>
                 </div>
             </header>
-            <div class="flex justify-center items-center w-full">
-                <nav class="bg-white w-full">
+            <div class="flex justify-between items-center w-full mt-10 gap-10">
+                <nav class="bg-white w-full rounded-lg pb-5 hidden">
                     <div class="h-36 bg-[#2563eb] flex justify-center items-center relative rounded-t-lg">
                         <img class=" w-24 h-24 rounded-full absolute -bottom-12 border-4 border-white" src="./assets/avatar.png" alt="">
                     </div>
@@ -71,11 +71,54 @@
                         <p class="text-white">Change information</p>
                     </span>
                 </nav>
-                <main>
-                    
+                <main class="bg-white w-full rounded-t-lg pb-5 shadow-lg rounded-lg">
+                    <header class="border-b-2 w-full ">
+                        <ul class="li-wrapper flex justify-around items-center">
+                            <li class="tab-li active w-full flex justify-center items-center hover:bg-gray-50 cursor-pointer" data-id="users">
+                                <img class="w-8" src="./assets/users-group-svgrepo-com.svg" alt="">
+                                <h4 class="ml-2">
+                                    Users
+                                </h4>
+                            </li>
+                            <li class="tab-li w-full flex justify-center items-center hover:bg-gray-50 cursor-pointer" data-id="edit">
+                                <img class="w-8" src="./assets/edit-svgrepo-com-black.svg" alt="">
+                                <h4 class="ml-2">
+                                    Edit
+                                </h4>
+                            </li>
+                            <li class="tab-li w-full flex justify-center items-center hover:bg-gray-50 cursor-pointer" data-id="courses">
+                                <img class="w-8" src="./assets/hat-svgrepo-com.svg" alt="">
+                                <h4 class="ml-2">
+                                    Courses
+                                </h4>
+                            </li>
+                            <li class="tab-li w-full flex justify-center items-center hover:bg-gray-50 cursor-pointer" data-id="sessions">
+                                <img class="w-8" src="./assets/doc-text-svgrepo-com.svg" alt="">
+                                <h4 class="ml-2">
+                                    Sessions
+                                </h4>
+                            </li>
+                        </ul>
+                    </header>
+                    <div class="content-wrapper">
+                        <p class="content active" id="users">
+                            users 
+                        </p>
+                        <p class="content hidden" id="edit">
+                            edit
+                        </p>
+                        <p class="content hidden" id="courses">
+                            courses
+                        </p>
+                        <p class="content hidden" id="sessions">
+                            sessions
+                        </p>
+                      </div>
                 </main>
             </div>
         </div>
     </section>
+
+    <script src="./toggleTab.js"></script>
 </body>
 </html>
