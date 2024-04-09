@@ -74,7 +74,7 @@
                 <main class="bg-white w-9/12 rounded-t-lg pb-5 shadow-lg rounded-lg">
                     <header class="border-b-2 w-full ">
                         <ul class="li-wrapper flex justify-around items-center">
-                            <li class="tab-li active w-full flex justify-center items-center hover:bg-gray-50 cursor-pointer" data-id="users">
+                            <li class="tab-li w-full flex justify-center items-center bg-gray-50 hover:bg-gray-50 cursor-pointer" data-id="users">
                                 <img class="w-8" src="./assets/users-group-svgrepo-com.svg" alt="">
                                 <h4 class="ml-2">
                                     Users
@@ -101,9 +101,25 @@
                         </ul>
                     </header>
                     <div class="content-wrapper">
-                        <p class="content active" id="users">
-                            users 
-                        </p>
+                        <div class="content active" id="users">
+                            <header class="flex justify-center items-center gap-8">
+                                <div class="flex justify-between items-center w-full border-2 rounded-lg ml-10 my-10 px-4 py-2.5">
+                                    <span class="flex justify-center items-center w-full h-full">
+                                        <label for="search">
+                                            <img class="w-6" src="./assets/search-alt-svgrepo-com.svg" alt="search">
+                                        </label>
+                                        <input class="outline-none pl-2 w-full h-full" name="search" id="search" type="search" placeholder="Search User Id">
+                                    </span>
+                                    <img class="w-8 border-l-2 pl-2 cursor-pointer " src="./assets/setting-5-svgrepo-com.svg" alt="setting">
+                                </div>
+                                <div class="mr-20">
+                                    <span class="bg-[#66697a60] px-8 py-1 rounded-lg flex justify-center items-center shadow hover:shadow-sm  cursor-pointer">
+                                        <img class="w-9 h-9 pr-2" src="./assets/search-alt-svgrepo-com.svg" alt="">
+                                        <p class="text-white">Search</p>
+                                    </span>
+                                </div>
+                            </header> 
+                        </div>
                         <p class="content hidden" id="edit">
                             edit
                         </p>
