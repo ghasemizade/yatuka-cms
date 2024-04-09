@@ -1,3 +1,1 @@
-# YATUKA 
-
-## Yatuka is the Content management system
+# Yatuka is the Content management system
