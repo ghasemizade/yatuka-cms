@@ -8,7 +8,7 @@
     <title>YATUKA</title>
 </head>
 <body>
-    <section class="bg-gray-50 dark:bg-gray-900 min-h-screen flex justify-center items-center">
+    <section class="bg-gray-50 dark:bg-gray-900 min-h-screen flex justify-center items-center overflow-hidden">
         <div class="w-full flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <header class="w-full bg-white rounded-lg shadow-lg flex justify-between items-center py-5 px-10">
                 <div class="flex justify-center items-center">
@@ -144,7 +144,7 @@
                                 </ul>
                             </main>
                         </section>
-                        <section class="content hidden" id="edit">
+                        <section class="content hidden overflow-visible overflow-y-scroll h-[2000px]" id="edit">
                             <main class="my-10 mx-10">
                                 <!-- change name -->
                                 <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-5 mb-10 relative">
@@ -192,6 +192,16 @@
                                             <img class="w-8" src="./assets/email-svgrepo-com.svg" alt="">
                                         </label>
                                         <input class="outline-none w-full ml-2" type="email" id="email" name="email" placeholder="email">
+                                    </span>
+                                </div>
+                                <!-- change profile -->
+                                <div class="flex justify-start items-center gap-8 border-t-2 pt-5 mb-10 relative">
+                                    <h4 class="absolute left-4 -top-4 text-gray-300 bg-white px-2">Change Profile</h4>
+                                    <span class="flex justify-stretch items-center w-64 border-2 rounded-lg pl-2 py-2">
+                                        <input src="assets/avatar.png" class="outline-none w-36 ml-2 rounded-lg" type="image" id="email" name="email" placeholder="email">
+                                    </span>
+                                    <span class="flex justify-stretch items-center w-64 h-40 border-2 rounded-lg pl-2 py-2">
+                                        <input class="outline-none mx-2 w-full h-full" value="#2563eb" type="color" id="email" name="email" placeholder="email">
                                     </span>
                                 </div>
                             </main>
