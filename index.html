@@ -34,8 +34,8 @@
                     </span>
                 </div>
             </header>
-            <div class="flex justify-between items-start w-full mt-10 gap-10">
-                <nav class="bg-white w-3/12 rounded-lg pb-5">
+            <div class="flex justify-between items-start w-full mt-10 gap-10 max-h-[475px]">
+                <nav class="bg-white w-3/12 rounded-lg pb-5 shadow-lg">
                     <div class="h-36 bg-[#2563eb] flex justify-center items-center relative rounded-t-lg">
                         <img class=" w-24 h-24 rounded-full absolute -bottom-12 border-4 border-white" src="./assets/avatar.png" alt="">
                     </div>
@@ -144,8 +144,8 @@
                                 </ul>
                             </main>
                         </section>
-                        <section class="content hidden overflow-visible overflow-y-scroll h-[2000px]" id="edit">
-                            <main class="my-10 mx-10">
+                        <section class="content hidden w-full max-h-[475px] overflow-y-scroll" id="edit">
+                            <main class="px-20 py-10 w-full h-full  overflow-y-auto">
                                 <!-- change name -->
                                 <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-5 mb-10 relative">
                                     <h4 class="absolute left-4 -top-4 text-gray-300 bg-white px-2">Change Name</h4>
@@ -198,7 +198,7 @@
                                 <div class="flex justify-start items-center gap-8 border-t-2 pt-5 mb-10 relative">
                                     <h4 class="absolute left-4 -top-4 text-gray-300 bg-white px-2">Change Profile</h4>
                                     <span class="flex justify-stretch items-center w-64 border-2 rounded-lg pl-2 py-2">
-                                        <input src="assets/avatar.png" class="outline-none w-36 ml-2 rounded-lg" type="image" id="email" name="email" placeholder="email">
+                                        <input src="assets/image-picture-svgrepo-com.svg" class="outline-none w-36 ml-2 rounded-lg" type="image" id="email" name="email" placeholder="email">
                                     </span>
                                     <span class="flex justify-stretch items-center w-64 h-40 border-2 rounded-lg pl-2 py-2">
                                         <input class="outline-none mx-2 w-full h-full" value="#2563eb" type="color" id="email" name="email" placeholder="email">
