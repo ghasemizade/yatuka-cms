@@ -8,7 +8,7 @@
     <title>YATUKA</title>
 </head>
 <body>
-    <section class="bg-gray-50 dark:bg-gray-900 py-10">
+    <section class="bg-gray-50 dark:bg-gray-900 py-10 min-h-screen">
         <div class="w-full flex flex-col items-center justify-center px-6 py-8 lg:py-0">
             <header class="w-full bg-white rounded-lg shadow-lg flex justify-between items-center py-5 px-10">
                 <div class="flex justify-center items-center">
@@ -330,9 +330,48 @@
                                 <div id="layer" class="hidden fixed inset-0 z-10 bg-gray-500 bg-opacity-75 transition-opacity"></div>
                             </main>
                         </section>
-                        <p class="content hidden" id="sessions">
-                            sessions
-                        </p>
+                        <!-- sessions -->
+                        <section class="content hidden w-full max-h-[475px] overflow-y-scroll" id="sessions">
+                            <main class="px-10 pt-2 mt-10 w-full h-full overflow-y-auto">
+                                <!-- sesstion -->
+                                <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-10 mb-5 relative">
+                                    <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Sesstion Edit</h4>
+                                    <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <label for="session-name">
+                                            <img class="w-8" src="./assets/text-svgrepo-com.svg" alt="">
+                                        </label>
+                                        <input class="outline-none w-full ml-2" type="text" id="session-name" name="session-name" placeholder="sesstion name">
+                                    </span>
+                                    <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <label for="sesstion-time">
+                                            <img class="w-8" src="./assets/time-svgrepo-com.svg" alt="">
+                                        </label>
+                                        <input class="without_ampm outline-none w-full ml-2" type="time"  id="sesstion-time" name="sesstion-time" placeholder="session time">
+                                    </span>
+                                </div>
+                                <div class="flex justify-center items-center w-full gap-8 pt-5 mb-10 relative">
+                                    <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <label for="session-price">
+                                            <img class="w-8" src="./assets/dollar-square-svgrepo-com.svg" alt="">
+                                        </label>
+                                        <input class="outline-none w-full ml-2" type="number" id="session-price" name="session-price" placeholder="session price">
+                                    </span>
+                                    <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <label for="category">
+                                            <img class="w-8" src="./assets/category-svgrepo-com.svg" alt="">
+                                        </label>
+                                        <input class="outline-none w-full ml-2" type="text" id="category" name="category" placeholder="category">
+                                    </span>
+                                </div>
+                                <!-- submit -->
+                                <span class="bg-white w-full">
+                                    <button class=" flex justify-center items-center w-full bg-[#2563eb] text-white px-2 rounded-lg py-2">
+                                        <img class="w-5" src="./assets/edit-svgrepo-com.svg" alt="">
+                                        <p class="ml-2">Update Information</p>
+                                    </button>
+                                </span>
+                            </main>
+                        </section>
                     </div>
                 </main>
             </div>
