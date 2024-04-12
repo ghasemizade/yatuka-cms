@@ -88,13 +88,13 @@
                                 </h4>
                             </li>
                             <li class="tab-li w-full flex justify-center items-center hover:bg-gray-50 cursor-pointer" data-id="courses">
-                                <img class="w-8" src="./assets/hat-svgrepo-com.svg" alt="">
+                                <img class="w-8 " src="./assets/hat-svgrepo-com.svg" alt="">
                                 <h4 class="ml-2 hidden sm:block">
                                     Courses
                                 </h4>
                             </li>
-                            <li class="tab-li w-full flex justify-center items-center hover:bg-gray-50 cursor-pointer" data-id="sessions">
-                                <img class="w-6" src="./assets/doc-text-svgrepo-com.svg" alt="">
+                            <li class="tab-li w-full h-full flex justify-center items-center hover:bg-gray-50 cursor-pointer" data-id="sessions">
+                                <img class="w-6 h-8" src="./assets/doc-text-svgrepo-com.svg" alt="">
                                 <h4 class="ml-2 hidden sm:block">
                                     Sessions
                                 </h4>
@@ -339,17 +339,19 @@
                                 <!-- sesstion -->
                                 <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-10 mb-5 relative">
                                     <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Sesstion Edit</h4>
-                                    <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
-                                        <label for="session-name">
-                                            <img class="w-8" src="./assets/text-svgrepo-com.svg" alt="">
-                                        </label>
-                                        <input class="outline-none w-full ml-2" type="text" id="session-name" name="session-name" placeholder="sesstion name">
-                                    </span>
-                                    <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
-                                        <label for="sesstion-time">
-                                            <img class="w-8" src="./assets/time-svgrepo-com.svg" alt="">
-                                        </label>
-                                        <input class="without_ampm outline-none w-full ml-2" type="time"  id="sesstion-time" name="sesstion-time" placeholder="session time">
+                                    <span class="flex justify-center items-center gap-2 flex-col sm:flex-row w-full">
+                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                            <label for="session-name">
+                                                <img class="w-8" src="./assets/text-svgrepo-com.svg" alt="">
+                                            </label>
+                                            <input class="outline-none w-full ml-2" type="text" id="session-name" name="session-name" placeholder="sesstion name">
+                                        </span>
+                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                            <label for="sesstion-time">
+                                                <img class="w-8" src="./assets/time-svgrepo-com.svg" alt="">
+                                            </label>
+                                            <input class="without_ampm outline-none w-full ml-2" type="time"  id="sesstion-time" name="sesstion-time" placeholder="session time">
+                                        </span>
                                     </span>
                                 </div>
                                 <div class="flex justify-center items-center w-full gap-8 pt-5 mb-10 relative">
