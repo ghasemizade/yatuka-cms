@@ -105,7 +105,7 @@
                     <div class="content-wrapper h-[500px] overflow-auto">
                         <!-- Users -->
                         <section class="content active" id="users">
-                            <header class="flex flex-col sm:flex-row justify-center items-center gap-x-2 p-2 mb-5">
+                            <header class="flex flex-col sm:flex-row justify-center items-center gap-x-2 px-4 mb-5">
                                 <div class="flex justify-between items-center w-full bg-gray-100 rounded-lg my-5 p-2">
                                     <span class="flex justify-center items-center">
                                         <label for="search">
@@ -122,9 +122,9 @@
                                     </button>
                                 </div>
                             </header>
-                            <main>
+                            <main class="px-4">
                                 <ul>
-                                    <li class="flex justify-between items-center mx-2 bg-gray-100 hover:bg-gray-200 rounded-lg p-2">
+                                    <li class="flex justify-between items-center bg-gray-100 hover:bg-gray-200 rounded-lg p-2">
                                         <div class="flex justify-center items-center">
                                             <img class="w-14 rounded-full" src="./assets/avatar.png" alt="">
                                             <div class="ml-4">
@@ -148,22 +148,22 @@
                         </section>
                         <!-- Edit -->
                         <section class="content hidden w-full h-full overflow-y-scroll" id="edit">
-                            <main class="px-10 pt-2 mt-10 ">
+                            <main class="px-4 pt-2 mt-10 ">
                                 <!-- change name -->
                                 <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-5 mb-10 relative">
                                     <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Change Name</h4>
                                     <span class="flex justify-center items-center gap-2 flex-col sm:flex-row w-full">
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-1">
                                             <label for="fname">
                                                 <img class="w-8" src="./assets/user-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2" type="text" id="fname" name="fname" placeholder="first name">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="fname" name="fname" placeholder="first name">
                                         </span>
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full rounded-lg pl-2 py-1 bg-gray-100">
                                             <label for="lname">
                                                 <img class="w-8" src="./assets/user-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2" type="text" id="lname" name="lname" placeholder="last name">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="lname" name="lname" placeholder="last name">
                                         </span>
                                     </span>
                                 </div>
@@ -171,40 +171,40 @@
                                 <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-5 mb-10 relative">
                                     <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Change Password</h4>
                                     <span class="flex justify-center items-center gap-2 flex-col md:flex-row w-full">
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-1">
                                             <label for="current-password">
                                                 <img class="w-8" src="./assets/key-minimalistic-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2" type="password" id="current-password" name="current-password" placeholder="current password">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="password" id="current-password" name="current-password" placeholder="current password">
                                         </span>
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-1">
                                             <label for="new-password">
                                                 <img class="w-8" src="./assets/key-minimalistic-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2" type="password" id="new-password" name="new-password" placeholder="new password">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="password" id="new-password" name="new-password" placeholder="new password">
                                         </span>
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-1">
                                             <label for="confirm-password">
                                                 <img class="w-8" src="./assets/key-minimalistic-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2" type="password" id="confirm-password" name="confirm-password" placeholder="confirm password">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="password" id="confirm-password" name="confirm-password" placeholder="confirm password">
                                         </span>
                                     </span>
                                 </div>
                                 <!-- change email -->
                                 <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-5 mb-10 relative">
                                     <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Change Email</h4>
-                                    <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                    <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-1">
                                         <label for="email">
                                             <img class="w-8" src="./assets/email-svgrepo-com.svg" alt="">
                                         </label>
-                                        <input class="outline-none w-full ml-2" type="email" id="email" name="email" placeholder="email">
+                                        <input class="outline-none w-full ml-2 bg-gray-100" type="email" id="email" name="email" placeholder="email">
                                     </span>
                                 </div>
                                 <!-- change profile -->
                                 <div class="flex justify-start items-center gap-8 border-t-2 pt-5 mb-10 relative">
                                     <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Change Profile</h4>
-                                    <span class="flex justify-stretch items-center w-64 border-2 rounded-lg pl-2 py-2">
+                                    <span class="flex justify-stretch items-center w-64 bg-gray-100 rounded-lg pl-2 py-2">
                                         <input src="assets/image-picture-svgrepo-com.svg" class="outline-none w-36 ml-2 rounded-lg" type="image" id="email" name="email" placeholder="email">
                                     </span>
                                     <span class="flex justify-stretch items-center w-64 h-40 border-2 rounded-lg pl-2 py-2">
@@ -336,48 +336,46 @@
                         </section>
                         <!-- sessions -->
                         <section class="content hidden w-full max-h-[475px] overflow-y-scroll" id="sessions">
-                            <main class="px-10 pt-2 mt-10 w-full h-full overflow-y-auto">
+                            <main class="px-4 pt-2 mt-10 w-full h-full overflow-y-auto">
                                 <!-- sesstion -->
                                 <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-10 relative">
                                     <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Sesstion Edit</h4>
                                     <span class="flex justify-center items-center gap-2 flex-col sm:flex-row w-full">
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-2">
                                             <label for="session-name">
                                                 <img class="w-8" src="./assets/text-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2" type="text" id="session-name" name="session-name" placeholder="sesstion name">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="session-name" name="session-name" placeholder="sesstion name">
                                         </span>
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-2">
                                             <label for="sesstion-time">
                                                 <img class="w-8" src="./assets/time-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="without_ampm outline-none w-full ml-2" type="time"  id="sesstion-time" name="sesstion-time" placeholder="session time">
+                                            <input class="without_ampm outline-none w-full ml-2 bg-gray-100" type="time"  id="sesstion-time" name="sesstion-time" placeholder="session time">
                                         </span>
                                     </span>
                                 </div>
                                 <div class="flex justify-center items-center w-full gap-8 pt-5 mb-10 relative">
                                     <span class="flex justify-center items-center gap-2 flex-col sm:flex-row w-full">
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-2">
                                             <label for="session-price">
                                                 <img class="w-8" src="./assets/dollar-square-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2" type="number" id="session-price" name="session-price" placeholder="session price">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="number" id="session-price" name="session-price" placeholder="session price">
                                         </span>
-                                        <span class="flex justify-stretch items-center w-full border-2 rounded-lg pl-2 py-2">
+                                        <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-2">
                                             <label for="category">
                                                 <img class="w-8" src="./assets/category-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2" type="text" id="category" name="category" placeholder="category">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="category" name="category" placeholder="category">
                                         </span>
                                     </span>
                                 </div>
                                 <!-- submit -->
-                                <span class="bg-white w-full">
-                                    <button class=" flex justify-center items-center w-full bg-[#2563eb] text-white px-2 rounded-lg py-2">
-                                        <img class="w-5" src="./assets/edit-svgrepo-com.svg" alt="">
-                                        <p class="ml-2">Update Information</p>
-                                    </button>
-                                </span>
+                                <button class=" flex justify-center items-center w-full bg-[#2563eb] text-white rounded-lg py-2">
+                                    <img class="w-5" src="./assets/edit-svgrepo-com.svg" alt="">
+                                    <p class="pl-2">Update Information</p>
+                                </button>
                             </main>
                         </section>
                     </div>
