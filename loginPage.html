@@ -23,11 +23,18 @@
                   <div>
                       <label for="fname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your firstname</label>
                       <input type="text" name="fname" id="fname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:outline-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="firstname" required="">
-                  </div>
+                      <h3 id="fname-valid" class="absolute text-xs text-red-600 hidden">Must be higher than 3 letter</h3>
+                    </div>
                   <div>
                       <label for="lname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your lastname</label>
                       <input type="text" name="lname" id="lname" placeholder="lastname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:outline-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
-                  </div>
+                      <h3 id="lname-valid" class="absolute text-xs text-red-600 hidden">Must be higher than 3 letter</h3>
+                    </div>
+                  <div>
+                    <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your username</label>
+                    <input type="text" name="username" id="username" placeholder="username" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:outline-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                    <h3 id="username-valid" class="absolute text-xs text-red-600 hidden">Must be higher than 8 letter</h3>
+                </div>
                   <div class="flex items-center justify-between">
                       <div class="flex items-start">
                           <div class="flex items-center h-5">
@@ -39,7 +46,7 @@
                       </div>
                       <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
                   </div>
-                  <button onclick="redirect()" type="submit" class="w-full mt-5 text-white shadow-lg shadow-primary-200 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
+                  <button id="submit-btn" type="submit" class="w-full mt-5 text-white shadow-lg shadow-primary-200 bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
                   <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                       Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
                   </p>
@@ -48,11 +55,6 @@
       </div>
   </div>
 
-  <script>
-    function redirect(){
-        location.replace('/index.html')
-    }
-  </script>
   <script src="./components/register.js"></script>
 </section>
 </body>
