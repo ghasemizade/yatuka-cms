@@ -68,7 +68,7 @@ submitBtnElem.addEventListener('click', ev => {
                 "content-type": "application/json"
             },
             body: JSON.stringify(newUserObj)
-        })
+        }).then(res => console.log(res))
     } else {
         alert("check inputs!")
     }
