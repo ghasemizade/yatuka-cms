@@ -1,5 +1,7 @@
 # Yatuka is the Content management system
 
+Yatuka is a lightweight Content Management System (CMS) designed for simplicity and flexibility. With Yatuka, you can easily manage your website content without the need for extensive technical knowledge.
+
 ![image](https://github.com/ghasemizade/yatuka-cms/assets/92257857/2df4bf02-80ad-4901-91df-83084ef817c5)
 
 ## tech stack
