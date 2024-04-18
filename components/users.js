@@ -21,7 +21,7 @@ const getUser = () => {
                         <span class="bg-[#2563eb] px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm cursor-pointer">
                             <p class="text-white">Edit</p>
                         </span>
-                        <span class="bg-red-500 px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm  cursor-pointer">
+                        <span id="remove-btn" class="bg-red-500 px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm  cursor-pointer">
                             <p class="text-white">Remove</p>
                         </span>
                     </div>
@@ -32,6 +32,7 @@ const getUser = () => {
     .catch(err => err)
 }
 
+console.log(getRemoveBtn);
 
 window.addEventListener('load', () => {
     getUser()
