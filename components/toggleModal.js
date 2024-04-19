@@ -1,5 +1,5 @@
 const modalElem = document.querySelector('#newcourse-modal')
-const layerElem = document.querySelector('#layer')
+const layerElem = document.querySelectorAll('#layer')[1]
 
 function closeModal() {
     modalElem.classList.add('hidden')
