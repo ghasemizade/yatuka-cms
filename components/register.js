@@ -69,6 +69,8 @@ submitBtnElem.addEventListener('click', ev => {
             },
             body: JSON.stringify(newUserObj)
         }).then(res => console.log(res))
+
+        redirect()
     } else {
         alert("check inputs!")
     }
