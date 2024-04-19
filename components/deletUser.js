@@ -11,7 +11,7 @@ function showModal (userId) {
     getLayer.classList.remove('hidden')
 }
 
-function closeModal () {
+function closeDeleteBtn () {
     modalDeleteUser.classList.add('hidden')
     modalDeleteUser.classList.remove('flex')
     getLayer.classList.add('hidden')
