@@ -5,6 +5,7 @@ const getUser = () => {
     .then(res => res.json())
     .then(users => {
         console.log(users);
+        usersWrapper.innerHTML = ""
         users.forEach(user => {
             usersWrapper.insertAdjacentHTML('beforeend', `
                 <li class="flex justify-between items-center bg-gray-100 hover:bg-gray-200 rounded-lg p-2 mb-1.5">
@@ -21,7 +22,7 @@ const getUser = () => {
                         <span class="bg-[#2563eb] px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm cursor-pointer">
                             <p class="text-white">Edit</p>
                         </span>
-                        <span onclick="showModal()" id="remove-btn" class="bg-red-500 px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm  cursor-pointer">
+                        <span onclick="showModal('${user._id}')" id="remove-btn" class="bg-red-500 px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm  cursor-pointer">
                             <p class="text-white">Remove</p>
                         </span>
                     </div>
