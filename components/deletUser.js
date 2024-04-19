@@ -1,6 +1,6 @@
 const modalDeleteUser = document.querySelector('#popup-modal')
 const getRemoveBtn = document.querySelector('#remove-btn')
-const getLayer = document.querySelector('#layer')
+const getLayer = document.querySelectorAll('#layer')[0]
 
 let mainUserId
 
