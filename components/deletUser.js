@@ -1,10 +1,10 @@
-const modalDeleteUser = document.querySelector('#popup-modal')
+const modalDeleteUser = document.querySelector('#delete-modal')
 const getRemoveBtn = document.querySelector('#remove-btn')
 const getLayer = document.querySelectorAll('#layer')[0]
 
 let mainUserId
 
-function showModal (userId) {
+function showDeleteModal (userId) {
     mainUserId = userId
     modalDeleteUser.classList.remove('hidden')
     modalDeleteUser.classList.add('flex')
