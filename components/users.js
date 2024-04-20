@@ -19,10 +19,10 @@ const getUser = () => {
                         </div>
                     </div>
                     <div class="flex gap-4 sm:flex-row flex-col">
-                        <span class="bg-[#2563eb] px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm cursor-pointer">
+                        <span onclick="showEditModal('${user._id}')" class="bg-[#2563eb] px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm cursor-pointer">
                             <p class="text-white">Edit</p>
                         </span>
-                        <span onclick="showModal('${user._id}')" id="remove-btn" class="bg-red-500 px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm  cursor-pointer">
+                        <span onclick="showDeleteModal('${user._id}')" id="remove-btn" class="bg-red-500 px-2 py-1 sm:px-8 rounded-lg flex justify-center items-center shadow hover:shadow-sm  cursor-pointer">
                             <p class="text-white">Remove</p>
                         </span>
                     </div>
