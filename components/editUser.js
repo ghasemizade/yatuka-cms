@@ -17,7 +17,6 @@ function showEditModal (userId) {
     })
     .then(res => res.json())
     .then(user => {
-        console.log(user.firstName);
         getUsername.value = user.userName
         getFirstname.value = user.firstName
         getLastname.value = user.lastName
@@ -27,12 +26,6 @@ function showEditModal (userId) {
     modalEditUser.classList.add('flex')
     getLayer.classList.remove('hidden')
 }
-
-// getUpdateBtn.addEventListener('click', () => {
-//     modalEditUser.classList.remove('flex')
-//     modalEditUser.classList.add('hidden')
-//     getLayer.classList.add('hidden')
-// })
 
 function editUser (event) {
     event.preventDefault()
@@ -44,14 +37,14 @@ function editUser (event) {
         profile: '/assets/avatar.png',
     }
 
-    // console.log(getFirstname.value);
-
     fetch(`http://localhost:3000/api/users/${mainUserId}`, {
         method: 'PUT',
+        headers: {
+            "content-type": "application/json"
+        },
         body: JSON.stringify(updateUserData)
     })
-    .then(res => {
-        console.log(res);
+    .then(() => {
         closeEditModal()
         getUser()
     })
