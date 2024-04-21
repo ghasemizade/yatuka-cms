@@ -1,10 +1,9 @@
 const usersWrapper = document.querySelector('#users-wrapper')
 
-const getUser = () => {
+function getUser () {
     fetch('http://localhost:3000/api/users')
     .then(res => res.json())
     .then(users => {
-        console.log(users);
         usersWrapper.innerHTML = ""
         users.forEach(user => {
             usersWrapper.insertAdjacentHTML('beforeend', `
