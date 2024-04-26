@@ -390,19 +390,19 @@
                             <main class="px-4 pt-2 mt-10 w-full h-full overflow-y-auto">
                                 <!-- sesstion -->
                                 <div class="flex justify-center items-center w-full gap-8 border-t-2 pt-10 relative">
-                                    <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Sesstion Edit</h4>
+                                    <h4 class="absolute left-4 -top-4 text-[#2564eb91] bg-white px-2">Session Edit</h4>
                                     <span class="flex justify-center items-center gap-2 flex-col sm:flex-row w-full">
                                         <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-2">
                                             <label for="session-name">
                                                 <img class="w-8" src="./assets/text-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="session-name" name="session-name" placeholder="sesstion name">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="session-name" name="session-name" placeholder="session name">
                                         </span>
                                         <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-2">
-                                            <label for="sesstion-time">
+                                            <label for="session-time">
                                                 <img class="w-8" src="./assets/time-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="without_ampm outline-none w-full ml-2 bg-gray-100" type="time"  id="sesstion-time" name="sesstion-time" placeholder="session time">
+                                            <input class="without_ampm outline-none w-full ml-2 bg-gray-100" type="text"  id="session-time" name="session-time" placeholder="session time">
                                         </span>
                                     </span>
                                 </div>
@@ -412,37 +412,38 @@
                                             <label for="session-price">
                                                 <img class="w-8" src="./assets/dollar-square-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2 bg-gray-100" type="number" id="session-price" name="session-price" placeholder="session price">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="session-price" name="session-price" placeholder="session price">
                                         </span>
                                         <span class="flex justify-stretch items-center w-full bg-gray-100 rounded-lg pl-2 py-2">
-                                            <label for="category">
+                                            <label for="session-category">
                                                 <img class="w-8" src="./assets/category-svgrepo-com.svg" alt="">
                                             </label>
-                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="category" name="category" placeholder="category">
+                                            <input class="outline-none w-full ml-2 bg-gray-100" type="text" id="session-category" name="session-category" placeholder="category">
                                         </span>
                                     </span>
                                 </div>
                                 <!-- submit -->
-                                <button class=" flex justify-center items-center w-full bg-[#2563eb] text-white rounded-lg py-2">
+                                <button id="session-btn" class=" flex justify-center items-center w-full bg-[#2563eb] text-white rounded-lg py-2">
                                     <img class="w-5" src="./assets/edit-svgrepo-com.svg" alt="">
                                     <p class="pl-2">Update Information</p>
                                 </button>
-                                <ul class="mt-5">
-                                    <li class="flex justify-between items-center bg-gray-100 hover:bg-gray-200 rounded-lg p-2 mb-1.5">
+                                <ul id="session-wrapper" class="mt-5">
+                                    <!-- <li class="flex justify-between items-center bg-gray-100 hover:bg-gray-200 rounded-lg p-2 mb-1.5">
                                         <div class="flex justify-center items-center">
                                             <div class="ml-4">
                                                 <span class="flex justify-start items-center sm:flex-row flex-col gap-y-2">
                                                     <h5 class="text-xs">session name</h5>
-                                                    <p class="text-[12px] bg-[#2563eb] rounded-lg text-white text-center ml-1 p-0.5">course</p>
+                                                    <p class="text-[12px] px-2 bg-[#2563eb] rounded-lg text-white text-center ml-1 p-0.5">course</p>
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="flex gap-4 sm:flex-row flex-col">
+                                        <div class="flex gap-4 sm:flex-row flex-col justify-center items-center">
+                                            <span class="">1h 30min</span>
                                             <span id="session-price" class="bg-[#52da40] text-white px-2 py-1 sm:px-8 rounded-full flex justify-center items-center shadow hover:shadow-sm">
                                                 <p class="">free</p>
                                             </span>
                                         </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </main>
                         </section>
@@ -458,5 +459,7 @@
     <script src="./components/toggleModal.js"></script>
     <script src="./components/deletUser.js"></script>
     <script src="./components/editUser.js"></script>
+    <script src="./components/sessions.js"></script>
+    <script src="./components/addSession.js"></script>
 </body>
 </html>
