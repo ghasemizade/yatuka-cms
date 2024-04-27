@@ -4,7 +4,7 @@ const getSessionTime = document.querySelector('#session-time')
 const getSessionPrice = document.querySelector('#session-price')
 const getSessionCategory = document.querySelector('#session-category')
 
-addSessionBtn.addEventListener('click', ev => {
+addSessionBtn.addEventListener('click', async () => {
     
     let newSessionData = {
         title: getSessionName.value,
@@ -13,7 +13,7 @@ addSessionBtn.addEventListener('click', ev => {
         course: getSessionCategory.value,
     }
     
-    fetch('http://localhost:3000/api/sessions', {
+    await fetch('http://localhost:3000/api/sessions', {
         method: 'POST',
         headers: {
             "Content-type": 'application/json'
