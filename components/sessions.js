@@ -2,13 +2,13 @@ const sessionWrapper = document.querySelector('#session-wrapper')
 
 function getSession() {
     fetch('http://localhost:3000/api/sessions')
-    .then(res => res.json())
-    .then(session => {
-        sessionWrapper.innerHTML = ""
-        session.forEach(sess => {
-            sessionWrapper.insertAdjacentHTML('beforeend', 
-            `
-                <li class="flex justify-between items-center bg-gray-100 hover:bg-gray-200 rounded-lg p-2 mb-1.5">
+        .then(res => res.json())
+        .then(session => {
+            sessionWrapper.innerHTML = "";
+            session.forEach(sess => {
+                sessionWrapper.insertAdjacentHTML('beforeend',
+                    `
+                <li onclick="showModalDeleteSession('${sess._id}')" class="flex justify-between items-center bg-gray-100 hover:bg-gray-200 rounded-lg p-2 mb-1.5">
                     <div class="flex justify-center items-center">
                         <div class="ml-4">
                             <span class="flex justify-start items-center sm:flex-row flex-col gap-y-2">
@@ -25,9 +25,9 @@ function getSession() {
                     </div>
                 </li>
             `
-        )
+                );
+            });
         });
-    })
 }
 
 getSession()
