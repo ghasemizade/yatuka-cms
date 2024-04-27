@@ -20,5 +20,8 @@ addSessionBtn.addEventListener('click', ev => {
         },
         body: JSON.stringify(newSessionData)
     })
-    .then (res => console.log(res))
+    .then (res => {
+        console.log(res)
+        getSession()
+    })
 })
