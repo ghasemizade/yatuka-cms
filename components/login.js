@@ -6,6 +6,7 @@ const getSubmitBtn = document.querySelector('#submit-btn')
 getSubmitBtn.addEventListener('click', (ev) => {
     ev.preventDefault()
     
+    let adminId = null
     let adminUsername = getUsernameInput.value
     let adminPassword = getPasswordInput.value
 
@@ -14,11 +15,14 @@ getSubmitBtn.addEventListener('click', (ev) => {
     .then(admins => {
 
         let isAdmin = admins.some(admin => {
-            return admin.userName === adminUsername && admin.password === adminPassword
+            if (admin.userName === adminUsername && admin.password === adminPassword) {
+                adminId = admin._id
+                return admin.userName === adminUsername && admin.password === adminPassword
+            }
         })
 
         if (isAdmin) {
-            console.log(isAdmin);
+            localStorage.setItem('loginId', adminId)
             location.replace('/index.html')
         } else{
             alert("it is something wrong! check it out");
