@@ -12,10 +12,23 @@ getSubmitBtn.addEventListener('click', (ev) => {
     fetch('http://localhost:3000/api/admins')
     .then(res => res.json())
     .then(admins => {
-        console.log(admins);
 
         let isAdmin = admins.some(admin => {
             return admin.userName === adminUsername && admin.password === adminPassword
         })
+
+        if (isAdmin) {
+            console.log(isAdmin);
+            location.replace('/index.html')
+        } else{
+            alert("it is something wrong! check it out");
+            clearLoginInput()
+        }
     })
 })
+
+
+function clearLoginInput() {
+    getUsernameInput.value = ''
+    getPasswordInput.value = ''   
+}
