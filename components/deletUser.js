@@ -21,7 +21,7 @@ function deleteUser () {
     fetch(`http://localhost:3000/api/users/${mainUserId}`, {
         method: 'DELETE'
     }).then(() => {
-        closeModal()
+        closeDeleteBtn()
         getUser()
     })
 }
