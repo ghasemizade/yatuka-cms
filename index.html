@@ -275,9 +275,9 @@
                         </section>
                         <!-- Courses -->
                         <section class="content hidden w-full max-h-[475px] overflow-y-scroll" id="courses">
-                            <main class="px-10 pt-2 mt-10 w-full h-full overflow-y-auto relative">
+                            <main class="px-4 pt-2 mt-10 w-full h-full overflow-y-auto relative">
                                 <!-- items -->
-                                <ul class="mb-20">
+                                <ul id="course-wrapper" class="mb-20">
                                     <!-- first item -->
                                     <li class="flex justify-center items-stretch bg-gray-50 rounded-r-lg hover:bg-gray-100 mb-10 md:flex-row flex-col">
                                         <img class="w-full sm:w-64 rounded-lg md:rounded-r-none" src="./assets/poster.jpg" alt="">
@@ -336,14 +336,12 @@
                                     </li>
                                 </ul>
                                 <!-- add new course -->
-                                <div class="pt-10 px-10 fixed w-40">
-                                    <span class=" bg-white w-full absolute -left-0 bottom-10">
-                                        <button onclick="openModal()" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="flex justify-center items-center w-full bg-[#2563eb] text-white px-2 rounded-lg py-2">
-                                            <img class="w-5" src="./assets/edit-svgrepo-com.svg" alt="">
-                                            <p class="ml-2">add new course</p>
-                                        </button>
-                                    </span>
-                                </div>
+                                <span class="absolute bottom-0 flex justify-center items-center">
+                                    <button onclick="openModal()" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="flex justify-center items-center w-full bg-[#2563eb] text-white px-2 rounded-lg py-2">
+                                        <img class="w-5" src="./assets/edit-svgrepo-com.svg" alt="">
+                                        <p class="ml-2">add new course</p>
+                                    </button>
+                                </span>                           
                                 <!-- modal -->
                                 <div id="newcourse-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                                     <div class="relative p-4 w-full max-w-md max-h-full">
@@ -364,14 +362,32 @@
                                             <!-- Modal body -->
                                             <div class="p-4 md:p-5">
                                                 <form class="space-y-4" action="#">
+                                                    <!-- title -->
                                                     <div>
                                                         <label for="course-title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
                                                         <input type="text" name="course-title" id="course-title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="course title" required />
                                                     </div>
+                                                    <!-- description -->
+                                                    <div>
+                                                        <label for="course-desc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                                                        <input type="text" name="course-desc" id="course-desc" placeholder="course description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required/>
+                                                    </div>
+                                                    <!-- time -->
+                                                    <div>
+                                                        <label for="course-time" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Time</label>
+                                                        <input type="text" name="course-time" id="course-time" placeholder="course time" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required/>
+                                                    </div>
+                                                    <!-- price -->
                                                     <div>
                                                         <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
                                                         <input type="text" name="text" id="text" placeholder="course price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required/>
                                                     </div>
+                                                    <!-- students -->
+                                                    <div>
+                                                        <label for="course-students" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Students</label>
+                                                        <input type="text" name="course-students" id="course-students" placeholder="course students" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required/>
+                                                    </div>
+                                                    <!-- category -->
                                                     <div>
                                                         <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
                                                         <input type="text" name="text" id="text" placeholder="course category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required/>
@@ -473,5 +489,6 @@
     <script src="./components/sessions.js"></script>
     <script src="./components/addSession.js"></script>
     <script src="./components/deleteSession.js"></script>
+    <script src="./components/course.js"></script>
 </body>
 </html>
