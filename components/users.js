@@ -33,6 +33,12 @@ function getUser () {
 }
 
 window.addEventListener('load', () => {
+
+    let adminId = localStorage.getItem('loginId')
+    if (!adminId) {
+        location.replace('/loginPage.html')
+    }
+
     getUser()
     getCourse()
 })
