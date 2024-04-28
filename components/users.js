@@ -34,4 +34,5 @@ function getUser () {
 
 window.addEventListener('load', () => {
     getUser()
+    getCourse()
 })
