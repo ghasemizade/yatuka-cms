@@ -1,5 +1,5 @@
 
 function exitPannel(){
-    location.replace('/yatuka-cms/loginPage.html')
+    location.replace('' + 'loginPage.html')
     localStorage.clear()
 }

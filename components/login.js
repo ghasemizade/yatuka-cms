@@ -23,7 +23,7 @@ getSubmitBtn.addEventListener('click', (ev) => {
 
         if (isAdmin) {
             localStorage.setItem('loginId', adminId)
-            location.replace('/yatuka-cms/index.html')
+            location.replace('' + 'index.html')
         } else{
             alert("it is something wrong! check it out");
             clearLoginInput()
