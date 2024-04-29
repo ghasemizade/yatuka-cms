@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 
     let adminId = localStorage.getItem('loginId')
     if (!adminId) {
-        location.replace('/loginPage.html')
+        location.replace('yatuka-cms/loginPage.html')
     }
 
     getUser()
