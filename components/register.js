@@ -77,5 +77,5 @@ submitBtnElem.addEventListener('click', ev => {
 })
 
 function redirect(){
-    location.replace('/index.html')
+    location.replace('/yatuka-cms/index.html')
 }
