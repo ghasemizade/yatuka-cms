@@ -16,12 +16,16 @@ Yatuka CMS is a simple yet powerful content management system built with Node.js
 ## Installation
   
 To get started with Yatuka CMS, follow these steps:
-#### 1.Clone the repository:
+
+#### Clone the repository:
 ```console
 git clone https://github.com/ghasemizade/yatuka-cms.git
 cd yatuka-cms
 ```
 
+## Usage
+### Admin panel
+Access the admin panel at http://localhost:3000/admin to manage content. You will need to create an admin account if one doesn't exist. Use the registration form to create an admin account.
 
 ## Tech Stack
 
