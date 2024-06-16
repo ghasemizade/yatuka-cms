@@ -13,6 +13,16 @@ Yatuka CMS is a simple yet powerful content management system built with Node.js
 * User Management: Control user access and permissions with Yatuka's user management system.
 * Responsive Design: Yatuka CMS is built with responsiveness in mind, ensuring your website looks great on any device.
 
+## Installation
+  
+To get started with Yatuka CMS, follow these steps:
+#### 1.Clone the repository:
+```console
+git clone https://github.com/ghasemizade/yatuka-cms.git
+cd yatuka-cms
+```
+
+
 ## Tech Stack
 
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
